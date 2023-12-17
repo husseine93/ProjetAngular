@@ -1,0 +1,8 @@
+<section class="category-container">
+  <div class="container">
+    <h2>{{ category.name }}</h2>
+    <div class="category-content">
+      <app-film-card *ngFor="let film of films" [film]="film"></app-film-card>
+    </div>
+  </div>
+</section>

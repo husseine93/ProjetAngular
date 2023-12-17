@@ -1,0 +1,82 @@
+/* Style de base de la page */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Couleur de fond plus claire */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur de connexion */
+.login-wrapper {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1); /* Ombre portée pour un effet de profondeur */
+    border-radius: 15px; /* Coins arrondis pour le conteneur */
+    overflow: hidden; /* Assure que tout le contenu reste à l'intérieur des coins arrondis */
+    width: 90%;
+    max-width: 400px; /* Largeur maximale du conteneur */
+    margin: 2rem auto; /* Centrage avec une marge */
+    background-color: #ffffff; /* Fond blanc pour le conteneur */
+}
+
+/* Style du logo */
+.logo {
+    display: block; /* Change le logo de position absolute à block */
+    width: 150px; /* Ajuste la taille du logo */
+    margin: 2rem auto; /* Centrage du logo */
+}
+
+/* Formulaire de connexion */
+.login-form {
+    padding: 2rem; /* Espace interne autour du formulaire */
+}
+
+/* Champs de saisie du formulaire */
+.login-form input {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #dcdcdc; /* Bordure plus subtile */
+    border-radius: 8px; /* Coins légèrement plus arrondis */
+    background-color: #f7f7f7; /* Fond des champs de saisie */
+    color: #333; /* Couleur de texte plus foncée pour le contraste */
+}
+
+/* Titre du formulaire */
+h1 {
+    color: #333; /* Couleur de texte plus foncée */
+    font-size: 1.5rem; /* Taille de police ajustée */
+    margin-bottom: 2rem; /* Espacement après le titre */
+}
+
+/* Style des liens */
+a {
+    color: #0056b3; /* Couleur des liens plus standard */
+    font-size: 1rem;
+    text-decoration: none; /* Enlève le soulignement */
+    margin-top: 1rem; /* Espacement au-dessus du lien */
+}
+
+/* Bouton de connexion */
+.login-form button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0056b3; /* Bouton d'action bleu */
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem; /* Espacement avant le bouton */
+}
+
+.login-form button:hover {
+    background-color: #003d82; /* Assombrir le bouton lors du survol */
+}
+
+/* Media queries pour une réactivité mobile */
+@media screen and (max-width: 768px) {
+    .login-wrapper {
+        margin: 1rem;
+        width: auto; /* Permet au conteneur de s'adapter à l'écran mobile */
+    }
+}

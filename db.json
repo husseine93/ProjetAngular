@@ -1,0 +1,110 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Anime"
+    },
+    {
+      "id": 2,
+      "name": "Livre"
+    },
+    {
+      "id": 3,
+      "name": "Serie"
+    }
+  ],
+  "films": [
+    {
+      "IdCategorie": 1,
+      "id": 2,
+      "nomFilm": "One piece"
+    },
+    {
+      "IdCategorie": 1,
+      "id": 3,
+      "nomFilm": "FairyTail"
+    },
+    {
+      "IdCategorie": 1,
+      "id": 5,
+      "nomFilm": "DragonBall"
+    },
+    {
+      "IdCategorie": 2,
+      "id": 6,
+      "nomFilm": "Elon Musk"
+    },
+    {
+      "IdCategorie": 2,
+      "id": 7,
+      "nomFilm": "Victor hugo"
+    },
+    {
+      "IdCategorie": 2,
+      "id": 8,
+      "nomFilm": "Angular pour les nuls"
+    },
+    {
+      "IdCategorie": 3,
+      "id": 9,
+      "nomFilm": "Prison break"
+    },
+    {
+      "IdCategorie": 3,
+      "id": 10,
+      "nomFilm": "Detrons"
+    },
+    {
+      "IdCategorie": 3,
+      "id": 11,
+      "nomFilm": "You"
+    }
+  ],
+  "users": [
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "birthdate": "1995-05-15",
+      "password": "qwerty456"
+    }
+  ],
+  "notes": [
+    {
+      "IdFilm": 1,
+      "note": 4,
+      "commentaire": "Excellent",
+      "id": 1
+    },
+    {
+      "IdFilm": 1,
+      "note": 5,
+      "commentaire": "Insane",
+      "id": 2
+    },
+    {
+      "IdFilm": 1,
+      "note": 1,
+      "commentaire": "Nul",
+      "id": 3
+    },
+    {
+      "IdFilm": 2,
+      "note": 5,
+      "commentaire": "TEST",
+      "id": 4
+    },
+    {
+      "IdFilm": 5,
+      "note": 4,
+      "commentaire": "",
+      "id": 5
+    },
+    {
+      "IdFilm": 2,
+      "note": 4,
+      "commentaire": "^pojhgv",
+      "id": 6
+    }
+  ]
+}

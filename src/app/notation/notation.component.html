@@ -1,0 +1,29 @@
+<div class="notation-container">
+    <h2>Notation de Film</h2>
+    <div *ngIf="film">
+      <h3>{{ film.nomFilm }}</h3>
+  
+      <form [formGroup]="notationForm" (ngSubmit)="submitNotation()">
+        <div>
+          <div class="star-rating">
+            <span *ngFor="let star of stars" (click)="setRating(star)" [class.selected]="star <= selectedRating">&#9733;</span>
+          </div>
+          <input type="hidden" formControlName="rating" [value]="selectedRating">
+        </div>
+  
+        <div>
+          <label for="comment">Recommander cet article:</label>
+          <textarea formControlName="comment" id="comment"></textarea>
+        </div>
+  
+        <div>
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+
+      <div class="notation" *ngFor="let notation of notations">
+        <p class="comment">{{ notation.commentaire }}</p>
+        <p class="note">Note : {{ notation.note }}</p>
+      </div>
+    </div>
+  </div>

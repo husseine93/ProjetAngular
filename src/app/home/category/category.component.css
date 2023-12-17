@@ -1,0 +1,26 @@
+.category-container {
+  width: 100%;
+  padding: 0px 5% 100px 5%;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.category-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .category-content {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
